@@ -6,3 +6,4 @@ set(EIGEN_DIRECTORY . CACHE STRING "Eigen directory.  The directory specified sh
 include_directories(${EIGEN_DIRECTORY})
 
 add_library(jeigen SHARED jeigen.cpp)
+target_link_libraries(jeigen -llog)
