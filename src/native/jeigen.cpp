@@ -284,7 +284,6 @@ extern "C" {
         Map<MatrixXd> Result(result,n,n);
         Result = In.exp();
 
-//        print_log("result","expo:"+to_string(Result.cols()));
     }
     JNIEXPORT void JNICALL Java_com_example_datacollection_jeigen_jeigen_log(JNIEnv *env, jclass clazz, jint n, jdoubleArray in_arr, jdoubleArray result_arr ) {
 
